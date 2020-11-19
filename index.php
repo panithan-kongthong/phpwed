@@ -19,10 +19,9 @@
   <div class="container mt-5">
     <div class="card-header bg-primary text-white d-flex justify-content-between">
       <h3>HOME</h4>
-       <a href="form.php" class="btn btn-success">ADD</a>
+       <a href="form.php" class="btn btn-primary">ADD</a>
     </div>
     <div class="table-responsive">
-      <div class="table-responsive">
         <table class="table table-hover table-bordered table-sm">
           <thead class="thead-dark">
             <tr>
