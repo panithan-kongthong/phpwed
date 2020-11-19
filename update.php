@@ -1,12 +1,12 @@
 <?php
-	$conn = mysqli_connect('apirat.mysql.database.azure.com', 'it63070185@apirat', 'UEKyfj18', 'ITFlab');
+	$conn = mysqli_connect('hololiveth.mysql.database.azure.com', 'panithan@hololiveth', 'folk_zaza2020', 'ITFLab', 3306);
 
 	$name = $_POST['name'];
 	$comment = $_POST['comment'];
 	$link = $_POST['link'];
 	$id = $_POST['id'];
 
-    $sql = 'UPDATE guestboook SET Name = "'.$name.'", Comment = "'.$comment.'", Link = "'.$link.'" WHERE ID = '.$id.'';
+    $sql = 'UPDATE guestbook SET Name = "'.$name.'", Comment = "'.$comment.'", Link = "'.$link.'" WHERE ID = '.$id.'';
     
 ?>
 
