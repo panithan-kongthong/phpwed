@@ -28,7 +28,6 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><form method="post"> <input type="submit" name="button1" value="Button1"/> <input type="submit" name="button2"value="Button2"/></form></td>        
   </tr>
-  <a href="form.html">add data</a>
 <?php
 }
 ?>
