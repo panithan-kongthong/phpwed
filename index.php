@@ -26,12 +26,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?><form method="post"> 
-        <input type="submit" name="button1"
-                value="Button1"/> 
-          
-        <input type="submit" name="button2"
-               value="Button2"/></form></td>
+    <td><form method="post"> <input type="submit" name="button1" value="Button1"/> <input type="submit" name="button2"value="Button2"/></form></td>        
   </tr>
 <?php
 }
