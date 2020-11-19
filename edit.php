@@ -23,7 +23,7 @@
 
   <body>
       <div class="container">
-          <div class="card-header bg-Warning text-white d-flex justify-content-between">
+          <div class="card-header bg-warning text-white d-flex justify-content-between">
            <h3>EDIT</h3>
            <a href="index.php" class="btn btn-light">BACK</a>
           </div>
