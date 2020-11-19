@@ -19,6 +19,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Action </div></th>
   </tr>
+    <a href="form.html" class="btn btn-success">add data</a>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
