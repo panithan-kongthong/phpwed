@@ -22,7 +22,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
                 value="Button1"/> 
           
         <input type="submit" name="button2"
-                value="Button2"/> </th>
+               value="Button2"/></from> </th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
