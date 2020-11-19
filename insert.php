@@ -21,6 +21,6 @@ if (mysqli_query($conn, $sql)) {
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-  
+ <a href="form.html" class="btn btn-success">add data</a> 
 mysqli_close($conn);
 ?>
