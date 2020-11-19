@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="card-header bg-primary text-white d-flex justify-content-between">
+    <div class="card-header bg-warning text-white d-flex justify-content-between">
      <h3>ADD</h4>
      <a href="index.php" class="btn btn-light">BACK</a>
     </div>
