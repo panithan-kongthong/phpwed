@@ -21,7 +21,7 @@
       <h3>HOME</h4>
        <a href="form.php" class="btn btn-success">ADD</a>
     </div>
-    <div class="card-body">
+    <div class="table-responsive">
       <div class="table-responsive">
         <table class="table table-hover table-bordered table-sm">
           <thead class="thead-dark">
