@@ -1,25 +1,41 @@
 <?php
+	$conn = mysqli_connect('apirat.mysql.database.azure.com', 'it63070185@apirat', 'UEKyfj18', 'ITFlab');
 
-$conn = mysqli_connect('hololiveth.mysql.database.azure.com', 'panithan@hololiveth', 'folk_zaza2020', 'ITFLab', 3306);
-$sql = 'SELECT * FROM guestbook WHERE ID = '.$_GET['ID'].'';
-$query = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($query);
+	$name = $_POST['name'];
+	$comment = $_POST['comment'];
+	$link = $_POST['link'];
+	$id = $_POST['id'];
+
+    $sql = 'UPDATE guestboook SET Name = "'.$name.'", Comment = "'.$comment.'", Link = "'.$link.'" WHERE ID = '.$id.'';
+    
 ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Comment Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
+
 <body>
-  <form action = "upload.php" method = "post">
-    <input type="text" name="ID" value="<?php echo $row['ID'] ?>">
-    Name:<br>
-    <input type="text" name = "name" id="idName" value="<?php echo $row['Name'];?>" placeholder="Enter Name"><br>
-    Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"><?php echo $row['Comment'];?></textarea><br>  
-    Link:<br>
-    <input type="text" name = "link" id="idLink" value="<?php echo $row['Link'];?>" placeholder="Enter Link"> <br><br>
-    <button type="submit">SAVE</button>
-  </form>
+    <div class="container mt-5 text-center">
+      
+            <h3>
+                <?php
+                    if (mysqli_query($conn, $sql)) {
+                        echo "Update Completed";
+                    } else {
+                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                    }
+                    mysqli_close($conn);
+                ?>
+            </h3>
+            <a href="index.php" class="btn btn-light mt-3">BACK</a>
+       
+    </div>
 </body>
+
 </html>
